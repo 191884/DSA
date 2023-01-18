@@ -3,6 +3,20 @@ using namespace std;
 
 vector<vector<int>> merge(vector<vector<int>> & interval){
     sort(interval.begin(), interval.end());
+    vector<vector<int>> merged;
+
+    for(int i = 0; i< interval.size(); i++){
+        if(merged.empty() || merged.back()[1]<interval[i][0]){
+            vector<int> v ={
+                interval[i][0],
+                interval[i][1]
+            }; 
+            merged.push_back(v);
+        }else{
+            merged.back()[1] = max(merged.back()[1], interval[i][1]);
+        }
+    }
+
     return interval;
 }
 
