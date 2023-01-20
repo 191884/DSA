@@ -8,7 +8,7 @@ void permutation(string &str, int start, int end){
     for(int i = start; i < end; i++){
         swap(str[i], str[start]);
         permutation(str, start+1, end);
-        
+        swap(str[i], str[start]);
     }
 }
 
