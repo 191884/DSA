@@ -13,15 +13,17 @@ int solve(int arr[], int n, int k){
     }
     int ans;
 
-    set<int>:: iterator itr;
-    for(itr = s.begin(); itr != s.end(); itr++){
-        ans = *itr;
-    }
-    return ans;
+    set<int>:: iterator itr = s.begin();
+    advance(itr, k-1);
+    // for(itr = s.begin(); itr != s.end(); itr++){
+    //     ans = *itr;
+    // }
+    return *itr;
 }
 
 int main(){
     int arr[6] =  {7, 10, 4, 3, 20, 15};
     int ans =solve(arr, 6, 2);
-    cout<<"K'th Largest element is: "<<ans;
+    cout<<"K'th Smallest element is: "<<ans;
+    // cout<<"K'th Largest element is: "<<
 }
