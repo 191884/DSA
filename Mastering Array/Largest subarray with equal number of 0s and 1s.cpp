@@ -28,7 +28,7 @@ void findSubArray(int arr[], int n){
 }
 
 int main(){
-    int arr[] = { 1, 0, 0, 1, 0, 1, 1 };
+    int arr[] = {1, 0, 1, 1, 1, 0, 0};
     int n = sizeof(arr)/sizeof(arr[0]);
     findSubArray(arr,n);
     return 0;
