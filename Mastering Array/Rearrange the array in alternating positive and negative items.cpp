@@ -21,15 +21,16 @@ void rearrange(int arr[], int n){
         if(outOfPlace >= 0 ){
             if(((arr[i] >= 0) && (arr[outOfPlace] <0))|| ((arr[i] < 0)&&(arr[outOfPlace]>= 0))){
                 rightRotate(arr, n, outOfPlace, i);
-            }
 
-            if(i - outOfPlace >=2){
-                outOfPlace +=2;
-            }else{
-                outOfPlace = -1;
+                if(i - outOfPlace >=2){
+                    outOfPlace +=2;
+                }else{
+                    outOfPlace = -1;
+                }
             }
         }
-        if (((arr[i] >= 0) && (!(i & 0x01)))
+        if(outOfPlace ==-1)
+            if (((arr[i] >= 0) && (!(i & 0x01)))
                 || ((arr[i] < 0) && (i & 0x01))) {
                 outOfPlace = i;
             }
