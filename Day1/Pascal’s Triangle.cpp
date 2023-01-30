@@ -23,7 +23,7 @@ void solve(vector<vector<int>> & vect, int n){
 }
 
 int main(){
-    int n = 6;
+    int n = 7;
     vector< vector<int>> vect(n);
     solve(vect, n);
     pri(vect);
