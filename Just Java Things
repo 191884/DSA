@@ -1,0 +1,73 @@
+	    // Primitive Data Types
+            //bytes
+            //short
+            //int
+            //long
+            //float
+            //double
+            //char
+            //boolean
+	    
+
+        // Non-Primitive Data Types
+        
+        //String  --Immutable
+            // -Length
+            // -Concatinate
+            // -charAt
+            // -replace
+            // -subString
+            
+            
+        //Array
+            //int[] marks = new int[5];
+            //int[] marks = {1,3,4,5,2};
+            //int[][] marks = {{23,42,21},{32,43,21}};
+            //-length
+		    //-sort   Array.sort()
+		    
+		//Casting
+		  //  int a = 19;
+		  //  int b = a + (int)10.23;
+		  
+		  
+		//Constant as final
+		
+		//Maths class
+		  //  -Math.max/min
+		  //  -Math.random
+		  //      -values b\w 0.0 - 1.0
+		  //      -(int)Math.random
+		  //      -(int)Math.random*100
+		 
+		 
+		 
+	   // //How to take input
+	   //     -Scanner sc = new Scanner(System.in)
+	   //     -int age = sc.nextInt();
+	   //     -float age = sc.nextFloat();
+	   //     -String input = sc.next(); used to take token(only single word)
+	   //     -String input = sc.nextLine(); used to take whole Line or string input;
+	    
+	    
+	    
+		//switch
+// 		int day = 2;
+// 		    switch(day){
+// 		        case 1: 
+// 		            ...
+// 		            break;
+// 		        case 2:
+// 		            ...
+// 		            break;
+// 		        default:
+// 		            ...
+// 		    }
+
+
+        // //TRY - CATCH in EXCPETION HANDLING
+        //     try{
+        //         ...
+        //     }catch(Exception exception){
+        //         ...
+        //     }
