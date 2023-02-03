@@ -2,9 +2,9 @@
 using namespace std;
 
 void solve(int arr[], int n){
-    sort(arr, arr+n);
     for(int i  =0; i< n; i= i+2){
-        swap(arr[i], arr[i+1]);
+        if( i> 0 && arr[i]<arr[i-1]) swap(arr[i], arr[i-1]);
+        if( i< n-1 && arr[i] > arr[i+1]) swap(arr[i], arr[i+1]);
     }
 }
 
