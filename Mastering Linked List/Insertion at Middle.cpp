@@ -34,9 +34,20 @@ void InsertionAtMiddle(Node* &head ,int position, int d){
     }
 
     Node* temp = head;
+
     for(int i = 1; i< position-1; i++){
         temp = temp -> next;
+        if(temp == NULL){
+            cout<<"The Linked List only have "<<i<<" elements."<<endl;
+            return;
+        }
     }
+
+    if(temp -> next == NULL){
+        InsertionAtTail(temp, d);
+        return;
+    }
+
     Node* nodeToInsert = new Node(d);
     nodeToInsert -> next = temp -> next;
     temp -> next = nodeToInsert;
@@ -64,6 +75,8 @@ int main(){
 
     InsertionAtMiddle(head, 1, 5);
     InsertionAtMiddle(head, 3, 11);
+
+    InsertionAtMiddle(head, 8, 50);
 
     printLL(head);
     
