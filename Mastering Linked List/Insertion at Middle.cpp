@@ -30,16 +30,16 @@ void InsertionAtTail(Node* &tail, int d){
 void InsertionAtMiddle(Node* &head ,int position, int d){
     if(position == 1){
         InsertionAtHead(head, d);
-    }else{
-
-        Node* temp = head;
-        for(int i = 1; i< position-1; i++){
-            temp = temp -> next;
-        }
-        Node* nodeToInsert = new Node(d);
-        nodeToInsert -> next = temp -> next;
-        temp -> next = nodeToInsert;
+        return;
     }
+
+    Node* temp = head;
+    for(int i = 1; i< position-1; i++){
+        temp = temp -> next;
+    }
+    Node* nodeToInsert = new Node(d);
+    nodeToInsert -> next = temp -> next;
+    temp -> next = nodeToInsert;
 }
 
 void printLL(Node* &head){
