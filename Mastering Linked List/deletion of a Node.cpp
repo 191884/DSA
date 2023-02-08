@@ -10,6 +10,15 @@ class Node{
         this -> data = data;
         this -> next = NULL;
     }
+
+    ~Node(){
+        int value = this -> data;
+        if(this -> next != NULL){
+            delete next;
+            this -> next = NULL;
+        }
+        cout<<"Node with Value "<<value<<" is freed."<<endl;
+    }
 };
 
 void insertAtTail(Node* &tail, int d){
@@ -23,7 +32,10 @@ void deleteNode(Node* &head, int numToDel){
     Node* prev = NULL;
 
     if(numToDel == head ->data){
+        Node* element = head;
         head = head -> next;
+        element -> next = NULL;
+        delete element;
         return;
     }
 
@@ -37,7 +49,11 @@ void deleteNode(Node* &head, int numToDel){
     if(curr == NULL){
         cout<<numToDel<<" isn't present in this this Linked List.";
         return;
-    }else prev -> next = curr -> next;
+    }else{ 
+        prev -> next = curr -> next;
+        curr -> next = NULL;
+        delete curr;
+    }
 }
 
 void printLL(Node* &head){
@@ -56,7 +72,7 @@ int main(){
     insertAtTail(tail, 9);
     insertAtTail(tail, 10);
 
-    deleteNode(head, 9);
+    deleteNode(head, 7);
 
     printLL(head);
 
