@@ -27,7 +27,7 @@ void InsertionAtTail(Node* &tail, int d){
     tail = temp;
 }
 
-void InsertionAtMiddle(Node* &head ,int position, int d){
+void InsertionAtMiddle(Node* &head, Node* &tail, int position, int d){
     if(position == 1){
         InsertionAtHead(head, d);
         return;
@@ -44,7 +44,7 @@ void InsertionAtMiddle(Node* &head ,int position, int d){
     }
 
     if(temp -> next == NULL){
-        InsertionAtTail(temp, d);
+        InsertionAtTail(tail, d);
         return;
     }
 
@@ -73,12 +73,14 @@ int main(){
     InsertionAtTail(tail, 24);
     InsertionAtTail(tail, 32);
 
-    InsertionAtMiddle(head, 1, 5);
-    InsertionAtMiddle(head, 3, 11);
+    InsertionAtMiddle(head, tail, 1, 5);
+    InsertionAtMiddle(head, tail, 3, 11);
 
-    InsertionAtMiddle(head, 8, 50);
+    InsertionAtMiddle(head, tail, 8, 50);
 
     printLL(head);
+
+    cout<<endl<<head->data<<endl<<tail->data;
     
     return 0;
 }
