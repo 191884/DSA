@@ -29,17 +29,27 @@ void printLL(Node* &head){
     
 }
 
+// Node* reverseLL(Node* &head){
+//     Node* back = NULL;
+//     Node* front = head;
+//     while (head != NULL){
+//         front = head -> next;
+//         head -> next = back;
+//         back = head;
+//         head = front;
+//     }
+//     head = back;
+//     return head;
+// }
+
 Node* reverseLL(Node* &head){
-    Node* back = NULL;
-    Node* front = head;
-    while (head != NULL){
-        front = head -> next;
-        head -> next = back;
-        back = head;
-        head = front;
+    if(head == NULL ||head -> next == NULL){
+        return head;
     }
-    head = back;
-    return head;
+    Node* temp = reverseLL(head-> next);
+    head -> next -> next = head;
+    head -> next = NULL;
+    return temp;
 }
 
 int main(){
