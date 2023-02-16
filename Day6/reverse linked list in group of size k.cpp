@@ -50,7 +50,7 @@ Node* reverseLL(Node* &head, int k){
     Node* cur;
     Node* nex;
     
-    while(length >= k) {
+    while(k<=length) {
         cur = pre->next;
         nex = cur->next;
         for(int i=1;i<k;i++) {
