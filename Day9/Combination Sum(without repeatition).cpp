@@ -5,7 +5,6 @@ void solve(vector<int>& nums, vector<int>& output, int index, int target, vector
     if(index == nums.size()){
         if(target == 0){
             ans.push_back(output);
-            cout<<ans.size()<<" ";
         }
         return;
     }
@@ -20,11 +19,11 @@ void solve(vector<int>& nums, vector<int>& output, int index, int target, vector
 }
 
 int main(){
-    vector<int> nums = {2,3,6,7};
+    vector<int> nums = {10,1,2,7,6,1,5};
     vector<vector<int>> ans;
     vector<int> output;
     int index = 0;
-    int target = 7;
+    int target = 8;
 
     solve(nums, output, index, target, ans);
     
