@@ -1,6 +1,5 @@
 // Find a peak element which is not smaller than its neighbours
 
-
 // Naive Approach
 class Solution{
 public:
