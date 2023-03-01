@@ -30,7 +30,7 @@ int solve(int arr[], int n, int k){
 int main(){
     int arr[] = { 1, 1, 2, 2, 2, 2, 3};
     int n = sizeof(arr)/sizeof(arr[0]);
-    int k = 1;
+    int k = 2;
     int ans = solve(arr, n, k);
     cout<<" The Frequency of element "<<k<<" is "<<ans;
 }
