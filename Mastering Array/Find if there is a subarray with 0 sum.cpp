@@ -16,7 +16,7 @@ bool subArrayExists(int arr[], int N)
 
 int main()
 {
-	int arr[] = {-3, 2, 3, 1, 6};
+	int arr[] = {-6, 2, 3, 1, 6};
 	int N = sizeof(arr) / sizeof(arr[0]);
 
 	if (subArrayExists(arr, N))
