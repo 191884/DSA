@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8fcac878-10a1-4c7f-bb54-112d595e52e3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DSA_JAVA/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSA_JAVA/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
+    <list default="true" id="8fcac878-10a1-4c7f-bb54-112d595e52e3" name="Changes" comment="Kth Missing Number Done.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +38,25 @@
       <option name="presentableId" value="Default" />
       <updated>1678758306356</updated>
     </task>
+    <task id="LOCAL-00001" summary="Kth Missing Number Done.">
+      <created>1678761128977</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1678761128977</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Kth Missing Number Done.">
+      <created>1678761174233</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1678761174233</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Kth Missing Number Done." />
+    <option name="LAST_COMMIT_MESSAGE" value="Kth Missing Number Done." />
   </component>
 </project>
