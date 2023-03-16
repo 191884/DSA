@@ -5,8 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8fcac878-10a1-4c7f-bb54-112d595e52e3" name="Changes" comment="Search in rotated Array.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DSA_JAVA/SearchInRotatedArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSA_JAVA/SearchInRotatedArray.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SearchInRotatedArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SearchInRotatedArray.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -82,7 +80,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678898337074</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Search in rotated Array.">
+      <created>1678936464751</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1678936464751</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

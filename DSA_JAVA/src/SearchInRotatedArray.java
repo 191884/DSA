@@ -29,6 +29,6 @@ public class SearchInRotatedArray {
                 }
             }
         }
-        return A[lo] ==target ? true :false;
+        return A[lo] == target;
     }
 }
