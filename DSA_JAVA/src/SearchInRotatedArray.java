@@ -1,32 +1,34 @@
 public class SearchInRotatedArray {
     public static void main(String[] args) {
         int[] arr = {13,15,2,3,4,7,11};
-        int target = 15;
+        int target =11;
         if(Solve(arr,target))
             System.out.println("Element is Present.");
         else
             System.out.println("Element is Not Present.");
     }
 
-    private static boolean Solve(int[] nums, int target) {
-        int low = 0, high = nums.length, mid ;
-        while (low <= high){
-            mid = (low + high) >> 2;
-            if(nums[mid]  == target) return true;
+    private static boolean Solve(int[] A, int target) {
+        int lo = 0;
+        int hi = A.length - 1;
+        while (lo < hi) {
+            int mid = (lo + hi) / 2;
+            if (A[mid] == target) return true;
 
-            if(nums[low] <= nums[mid]){
-                if(nums[low] <= target && nums[mid] >= target)
-                    high = mid -1;
-                else
-                    low = mid+1;
-            }
-            else {
-                if(nums[mid] <= target && target <= nums[high])
-                    low = mid +1;
-                else
-                    high = mid +1;
+            if (A[lo] <= A[mid]) {
+                if (target >= A[lo] && target < A[mid]) {
+                    hi = mid - 1;
+                } else {
+                    lo = mid + 1;
+                }
+            } else {
+                if (target > A[mid] && target <= A[hi]) {
+                    lo = mid + 1;
+                } else {
+                    hi = mid - 1;
+                }
             }
         }
-        return  false;
+        return A[lo] ==target ? true :false;
     }
 }
