@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8fcac878-10a1-4c7f-bb54-112d595e52e3" name="Changes" comment="Search in rotated Array.">
-      <change afterPath="$PROJECT_DIR$/src/MinimumInRotatedArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="8fcac878-10a1-4c7f-bb54-112d595e52e3" name="Changes" comment="Minimum in Rotated MinimumInRotatedArray." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -98,12 +95,20 @@
       <option name="project" value="LOCAL" />
       <updated>1678936773108</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Minimum in Rotated MinimumInRotatedArray.">
+      <created>1679027283321</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1679027283321</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Kth Missing Number Done." />
     <MESSAGE value="Search in rotated Array." />
-    <option name="LAST_COMMIT_MESSAGE" value="Search in rotated Array." />
+    <MESSAGE value="Minimum in Rotated MinimumInRotatedArray." />
+    <option name="LAST_COMMIT_MESSAGE" value="Minimum in Rotated MinimumInRotatedArray." />
   </component>
 </project>
