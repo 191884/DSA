@@ -24,7 +24,7 @@ int findMaximum(int arr[], int low, int high, int n) {
 	}
 
 int main(){
-	int arr[] = {2, 1, 3, 4, 7, 6};
+	int arr[] = {2, 5, 3, 1, 4, 4, 7, 6};
 	int n = sizeof(arr)/ sizeof(arr[0]);
 	int ans = findMaximum(arr, 0, n, n);
 	cout<<ans;
