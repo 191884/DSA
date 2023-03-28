@@ -31,14 +31,14 @@ void printLL(Node* &head){
 
 int main(){
     
-    Node* node1 = new Node(10);
-    Node* tail = node1;
+    Node* head = new Node(10);
+    Node* tail = head;
 
 
     InsertionAtTail(tail, 12);
     InsertionAtTail(tail, 15);
 
-    printLL(node1);
+    printLL(head);
     
     return 0;
 }
